@@ -36,13 +36,12 @@ Contains scripts to generate figures (2,3,4) in the paper and to obtain values f
 - hcp_run.py computes values for Table 4. Pass arguments for: subject number, method name, $d$, lamda (for CFAD and RRR) ($q$ is set automatically in this code)
   The script will output classification accuracy for this setting. 
   Example: python hcp_run.py --sub 102311 --method CFAD --d 10 
-
-All scripts have detailed instructions embedded.
+  All scripts have detailed instructions embedded.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
   
 Other folders:
-  - methods: contains implementations of LAD/LOL/DR/CFAD/RRR (SIR and SAVE are included in the Sliced package; LDA and PCA are available in scikit-learn)
-    (Note: there are two versions of CFAD with autograd and torch backend; torch is faster for higher-d)
+  - methods: contains implementations of CFAD as well as LAD/LOL/DR/RRR (SIR and SAVE are included in the Sliced package; LDA and PCA are available in scikit-learn)
+    (Note: there are two versions of CFAD with autograd and torch backend; torch is faster for higher-d datasets)
   - utils: contains utils.py and plot_utils.py 
   - pymanopt: added our implementation of Riemannian LBFGS (not included in the original pymanopt package)
   - results: all scripts store their results in this folder
