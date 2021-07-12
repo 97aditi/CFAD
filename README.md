@@ -36,6 +36,7 @@ Contains scripts to generate figures (2,3,4) in the paper and to obtain values f
 - hcp_run.py computes values for Table 4. Pass arguments for: subject number, method name, $d$, lamda (for CFAD and RRR) ($q$ is set automatically in this code)
   The script will output classification accuracy for this setting. 
   Example: python hcp_run.py --sub 102311 --method CFAD --d 10 
+  
   All scripts have detailed instructions embedded.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
   
